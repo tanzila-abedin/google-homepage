@@ -1,0 +1,204 @@
+html {
+    height: 85%;
+    width: 100%;
+
+}
+#navbar {
+    display: grid;
+    grid-template-columns:  1fr 60px 60px 60px 60px ;
+    grid-template-rows: 50px;
+    grid-template-areas: " . gmail image menu-tag sign-tag";
+}
+
+a, p{
+    text-decoration: none;
+    color: rgba(92, 91, 91, 0.87);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#gmail{
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+#image{
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+    margin-right: 10px
+}
+#menu{
+    grid-area: menu-tag;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+}
+#sign-in{
+    grid-area: sign-tag;
+    justify-self: center;
+    align-self: center;
+    background-color: #4683ea;
+    height: 30px;
+    width: 65px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4285f4
+}
+
+
+#main-body {
+  justify-self: center;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 70px 70px 200px;
+  grid-template-areas: 
+  ". logo ."
+  ". search ." 
+  ". flexbox ." 
+  ". google-text .";
+}
+
+#logo {
+  grid-area: logo;
+  justify-self: center;
+  align-self: end;
+}
+
+#search {
+  grid-area: search;
+  height: 43px ;
+  width: 130%;
+  padding: 2px;
+  align-self: center;
+  justify-self: center;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  border-radius: 30px;
+}
+
+#search:focus {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#flexbox {
+    display: flexbox;
+  grid-area: flexbox;
+  justify-self: center;
+  align-self: center;
+}
+
+#google-search {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+#google-search:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+#feeling-lucky{
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+
+#feeling-lucky:hover{
+    border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+#google-text {
+  grid-area: google-text;
+  justify-self: center;
+}
+
+#afrikaans{
+    padding: 5px;
+    color: blue;
+}
+
+#sesotho{
+    padding: 5px;
+    color: blue;
+}
+
+#isiZulu{
+    padding: 5px;
+    color: blue;
+}
+
+#northern-sotho{
+    padding: 5px;
+    color: blue;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    line-height: 30px;
+    margin-left: -10;
+    display: grid;
+    text-decoration-color: rgb(167, 167, 167);
+    background-color:rgb(233, 233, 233);
+    grid-template-columns: 100px 80px 80px 120px 600px 100px 100px 120px;
+    grid-template-rows: 40px;
+    grid-template-areas: 
+    "advertising business about nsw . privacy terms settings";
+}
+
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+}
+
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center; 
+}
+
+#nsw {
+    grid-area: nsw;
+    justify-self: center;
+    align-self: center;
+}
+
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+}
